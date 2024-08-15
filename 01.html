@@ -13,12 +13,12 @@ abaixo e escrever o conceito do aluno de acordo com a tabela de conceitos mais a
     const mediaExercicios = Number(prompt(`Informe sua média dos exercícios:`));
 
     //PROCESSAMENTO
-    const mediaAproveitamento = (nota1 + (nota2*2) + (nota3*3) + mediaExercicios) / 7; 
+    let mediaAproveitamento = (nota1 + (nota2*2) + (nota3*3) + mediaExercicios) / 7; 
 
     //SAÍDA
     if (mediaAproveitamento >= 9.0) {alert(`Conceito A`)}
     else if (mediaAproveitamento >= 7.5 && mediaAproveitamento < 9.0) {alert(`Conceito B`)}
-    if (mediaAproveitamento >= 6.0 && mediaAproveitamento < 7.5) {alert(`Conceito C`)} 
-    else if (mediaAproveitamento < 6.0) {alert(`Conceito D`)}
+    else if (mediaAproveitamento >= 6.0 && mediaAproveitamento < 7.5) {alert(`Conceito C`)} 
+    else {alert(`Conceito D`)}
 
 </script>
