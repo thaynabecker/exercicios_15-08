@@ -19,10 +19,16 @@
         let tempoTrabalho = 2024 - ingresso;
     
         //SAÍDA
-        if (idade>65) {
-            alert(``)
-        } else {
-            
-        }
-    
-    </script>
+        
+        if (idade >= 65) {
+            alert(`Requerer aposentadoria`)
+
+        } else if (tempoTrabalho) {
+            alert(`Requerer aposentadoria`)
+        
+        } else if (idade >= 60 && tempoTrabalho >= 25) {
+            alert(`Requerer aposentadoria`)
+
+        } else {alert(`Não requerer aposentadoria`)}
+
+</script>
